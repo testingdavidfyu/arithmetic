@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha test"
+    "test": "mocha test",
+    "test-coverage": "nyc mocha test",
+    "coverage-report": "nyc report"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "eslint": "^8.29.0",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
   }
 }
